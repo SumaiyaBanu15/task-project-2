@@ -45,8 +45,8 @@ function Content() {
       <Card className='contentCards' key={i}>
          <Card.Title className='ps-3 pt-2 d-flex imgTitle' style={{color:'#203562'}}>{e.title} 
          <div className='images'>
-         <img src='/public/Icons/edit.svg' /> &nbsp;
-         <img src='/public/Icons/delete.svg' />   
+         <img src='/Icons/edit.svg' /> &nbsp;
+         <img src='/Icons/delete.svg' />   
          </div>      
          </Card.Title>
           <Card.Body>
