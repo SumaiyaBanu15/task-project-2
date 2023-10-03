@@ -1,0 +1,22 @@
+.borderRound{
+    border-radius: 8px;
+    font-family: montserrat;
+}
+.fontSize{
+    font-size: 20px;
+}
+.cards{
+    border-radius: 15px;
+    box-shadow:0 0 10px rgb(166, 157, 184);
+}
+.notes{
+    font-size: large;
+    font-weight:500;
+}
+.imgTitle{
+    gap:65px;
+}
+.contentCards{
+    border-radius: 25px;
+    box-shadow:0 0 10px rgb(166, 157, 184);
+}
