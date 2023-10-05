@@ -1,3 +1,5 @@
+This page shows how to get the data using useContext. If you clicked the Notes from Sidebar, it will display the data from UserContext.jsx through Content.jsx.
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
