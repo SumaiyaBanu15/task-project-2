@@ -5,6 +5,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { useNavigate } from 'react-router-dom';
+import { FormControl } from 'react-bootstrap';
 
 
 function Content() {
@@ -19,7 +20,9 @@ function Content() {
       <Card className='cards'>
         <Card.Title className='p-3 mt-2' style={{color:'#203562'}}> Add a Note </Card.Title>
         <Card.Title className='ps-3' style={{color:'#203562'}}> Title </Card.Title>
-        <Card.Body className='p-3 mb-5' style={{color:'#4B649A'}}> | Take a note... </Card.Body>
+        
+        <Card.Body className='p-3 mb-5' style={{color:'#4B649A'}}>
+          <Form><FormControl type="text" placeholder='| Take a note...'>  </FormControl> </Form> </Card.Body>
       </Card>
       </Col>
     </Row>
