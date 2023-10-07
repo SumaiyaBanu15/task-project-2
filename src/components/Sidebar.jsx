@@ -11,7 +11,7 @@ return <>
     <img className='pt-1' src='/Icons/description-white.svg' alt='Notes Icon' width='30px' height='35px'/>
     <div>
       <Link to ='/content'>
-    <span className='p-1 fontSize' style={{color:'white', textDecoration:'none'}}>Notes</span>
+    <span className='p-1 fontSize'>Notes</span>
      </Link>
     </div>
     </div>

@@ -1,10 +1,9 @@
-import React,{ useState } from 'react'
+import React from 'react'
 import Sidebar from './components/Sidebar'
 import Content from './components/Content'
-import UserContext,{ UserDataContext } from './components/context/UserContext'
+import Cards from './components/Cards'
+import UserContext  from './components/context/UserContext'
 import { BrowserRouter,Routes,Route } from 'react-router-dom'
-import { useNavigate } from 'react-router-dom'
-
 
 function App() {
 
@@ -18,7 +17,9 @@ function App() {
             </div>
             <div className="col-md-9">
               <Routes>
-                <Route path='/content' element={<UserContext><Content /></UserContext>} />
+                <Route path='content' element ={<UserContext><Content /> </UserContext>} />
+
+                <Route path='cards/:id' element ={<UserContext><Cards /></UserContext>} />
               </Routes>
             </div>
           </div>
