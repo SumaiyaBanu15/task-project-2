@@ -24,8 +24,8 @@ function Content() {
 }
 
   const UserSchema = Yup.object().shape({
-    title:Yup.string(),
-    body:Yup.string()
+    title:Yup.string().required("Title is Required"),
+    body:Yup.string().required("Body is Required")
   })
 
   return <>
