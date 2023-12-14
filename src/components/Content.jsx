@@ -42,10 +42,11 @@ function Content() {
           body:''
         }} 
         validationSchema={UserSchema}
-        onSubmit={(values)=>{
+        onSubmit={(values,{ resetForm })=>{
           let newArray = [...data]
           newArray.push(values)
-          setData(newArray);        
+          setData(newArray); 
+          resetForm({values:{title:"", body:""} })       
         }}
         >
 
