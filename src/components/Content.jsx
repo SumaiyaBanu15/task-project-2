@@ -98,7 +98,7 @@ function Content() {
 
     <Row>
     <Col>
-    <div className='d-flex gap-2 p-2 mt-2 cardConatiner'>
+    <div className='d-flex gap-2 p-2 mt-2 cardContainer'>
     {
     data.map((e,index)=> {
       return <div className='cardsGroup' key={index}>
