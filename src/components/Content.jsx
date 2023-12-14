@@ -1,4 +1,4 @@
-import React,{ useContext } from 'react'
+import React,{ useContext, useEffect, useState } from 'react'
 import { UserDataContext } from './context/UserContext'
 import Card from 'react-bootstrap/Card';
 import Container from "react-bootstrap/Container";
@@ -20,8 +20,7 @@ function Content() {
     let newData = [...data]
     newData.splice(index,1)
     setData(newData)
-
-}
+  }
 
   const UserSchema = Yup.object().shape({
     title:Yup.string().required("Title is Required"),
@@ -34,8 +33,11 @@ function Content() {
     <Row>
       <Col>
       <Card className='cards'>
-        <Card.Title className='p-3 mt-2' style={{color:'#203562'}}> Add a Note </Card.Title>
-        <Formik initialValues={{
+        <Card.Title className='p-3 mt-2' style={{color:'#203562'}}>
+          {" "}
+          Add a Note{" "} </Card.Title>
+        <Formik 
+        initialValues={{
           title:'',
           body:''
         }} 
@@ -43,9 +45,9 @@ function Content() {
         onSubmit={(values)=>{
           let newArray = [...data]
           newArray.push(values)
-          setData(newArray)
-        
-        }}>
+          setData(newArray);        
+        }}
+        >
 
         {({ errors,touched,handleBlur,handleSubmit,handleChange})=>(  
         <Form onSubmit={handleSubmit}>
@@ -63,7 +65,11 @@ function Content() {
         <br />
           <Button variant="primary" type='submit'>
           Submit
-        </Button>
+         </Button>
+        &nbsp; &nbsp;
+          <Button variant="primary" type='reset'>
+          Reset
+          </Button>
         </Card.Body>
         </Form.Group>          
           </Form> 

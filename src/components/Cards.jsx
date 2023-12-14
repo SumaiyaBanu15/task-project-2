@@ -30,7 +30,7 @@ const getData =(index)=>{
   let newValues = {...initialValue}
   newValues.title = data[index].title
   newValues.body = data[index].body
-  console.log(newValues)
+  // console.log(newValues)
   setInitialValue(newValues)
 }
 
